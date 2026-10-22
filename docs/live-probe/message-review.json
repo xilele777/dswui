@@ -1,0 +1,571 @@
+{
+  "md": {
+    "tag": "DIV",
+    "cls": "ds-markdown",
+    "text": "用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进行多项搜索，以覆盖定义",
+    "style": {
+      "fontSize": "14px",
+      "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "margin": "0px",
+      "padding": "0px",
+      "color": "rgb(97, 102, 107)",
+      "border": "0px none rgb(97, 102, 107)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "gap": "normal",
+      "width": "730px",
+      "height": "48px"
+    }
+  },
+  "parents": [
+    {
+      "tag": "DIV",
+      "cls": "e1675d8b ds-think-content",
+      "text": "用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进行多项搜索，以覆盖定义",
+      "style": {
+        "fontSize": "14px",
+        "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "margin": "0px",
+        "padding": "5px 0px 5px 22px",
+        "color": "rgb(128, 0, 128)",
+        "border": "0px none rgb(128, 0, 128)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "gap": "normal",
+        "width": "730px",
+        "height": "48px"
+      },
+      "html": "<div class=\"e1675d8b ds-think-content\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进行多项搜索，以覆盖定义、用途、类型和特点等方面。</span></p></div></div>"
+    },
+    {
+      "tag": "DIV",
+      "cls": "_74c0879",
+      "text": "已思考（用时 3 秒）用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进",
+      "style": {
+        "fontSize": "14px",
+        "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "margin": "0px",
+        "padding": "0px",
+        "color": "rgb(128, 0, 128)",
+        "border": "0px none rgb(128, 0, 128)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "gap": "normal",
+        "width": "752px",
+        "height": "291px"
+      },
+      "html": "<div class=\"_74c0879\" style=\"--collapsible-area-title-height: 34px; --group-title-sticky-base-top: 0px; --group-title-sticky-top: calc(var(--group-title-sticky-base-top) - var(--dsl-virtual-list-transform-y) + var(--dsl-virtual-list-ios-compensation-y));\"><div class=\"_245c867 _34a54ec\"><div class=\"_5ab5d64\"><div class=\"ds-icon _970ac5e\" style=\"font-size: 16px; width: 16px; height: 16px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.00192 6.64454C8.75026 6.64454 9.35732 7.25169 9.35739 8.00001C9.35739 8.74838 8.7503 9.35548 8.00192 9.35548C7.25367 9.35533 6.64743 8.74829 6.64743 8.00001C6.6475 7.25178 7.25371 6.64468 8.00192 6.64454Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.97165 1.29981C11.5853 0.718916 13.271 0.642197 14.3144 1.68555C15.3577 2.72902 15.2811 4.41466 14.7002 6.02833C14.4707 6.66561 14.1504 7.32937 13.75 8.00001C14.1504 8.67062 14.4707 9.33444 14.7002 9.97169C15.2811 11.5854 15.3578 13.271 14.3144 14.3145C13.271 15.3579 11.5854 15.2811 9.97165 14.7002C9.3344 14.4708 8.67059 14.1505 7.99997 13.75C7.32933 14.1505 6.66558 14.4708 6.02829 14.7002C4.41461 15.2811 2.72899 15.3578 1.68552 14.3145C0.642155 13.271 0.71887 11.5854 1.29977 9.97169C1.52915 9.33454 1.84865 8.67049 2.24899 8.00001C1.84866 7.32953 1.52915 6.66544 1.29977 6.02833C0.718852 4.41459 0.64207 2.729 1.68552 1.68555C2.72897 0.642112 4.41456 0.718887 6.02829 1.29981C6.66541 1.52918 7.32949 1.8487 7.99997 2.24903C8.67045 1.84869 9.33451 1.52919 9.97165 1.29981ZM12.9404 9.2129C12.4391 9.893 11.8616 10.5681 11.2148 11.2149C10.568 11.8616 9.89296 12.4391 9.21286 12.9404C9.62532 13.1579 10.0271 13.338 10.4121 13.4766C11.9146 14.0174 12.9172 13.8738 13.3955 13.3955C13.8737 12.9173 14.0174 11.9146 13.4765 10.4121C13.3379 10.0271 13.1578 9.62535 12.9404 9.2129ZM3.05856 9.2129C2.84121 9.62523 2.66197 10.0272 2.52341 10.4121C1.98252 11.9146 2.12627 12.9172 2.60446 13.3955C3.08278 13.8737 4.08544 14.0174 5.58786 13.4766C5.97264 13.338 6.37389 13.1577 6.7861 12.9404C6.10624 12.4393 5.43168 11.8614 4.78513 11.2149C4.13823 10.5679 3.55992 9.89313 3.05856 9.2129ZM7.99899 3.792C7.23179 4.31419 6.45306 4.95512 5.70407 5.70411C4.95509 6.45309 4.31415 7.23184 3.79196 7.99903C4.3143 8.76666 4.95471 9.54653 5.70407 10.2959C6.45309 11.0449 7.23271 11.6848 7.99997 12.207C8.76725 11.6848 9.54683 11.0449 10.2959 10.2959C11.0449 9.54686 11.6848 8.76729 12.207 8.00001C11.6848 7.23275 11.0449 6.45312 10.2959 5.70411C9.5465 4.95475 8.76662 4.31434 7.99899 3.792ZM5.58786 2.52344C4.08533 1.98255 3.08272 2.12625 2.60446 2.6045C2.12621 3.08275 1.98252 4.08536 2.52341 5.5879C2.66189 5.97253 2.8414 6.37409 3.05856 6.78614C3.55983 6.10611 4.1384 5.43189 4.78513 4.78516C5.43186 4.13843 6.10606 3.55987 6.7861 3.0586C6.37405 2.84144 5.97249 2.66192 5.58786 2.52344ZM13.3955 2.6045C12.9172 2.12631 11.9146 1.98257 10.4121 2.52344C10.0272 2.66201 9.62519 2.84125 9.21286 3.0586C9.8931 3.55996 10.5679 4.13827 11.2148 4.78516C11.8614 5.43172 12.4392 6.10627 12.9404 6.78614C13.1577 6.37393 13.338 5.97267 13.4765 5.5879C14.0174 4.08549 13.8736 3.08281 13.3955 2.6045Z\" fill=\"currentColor\"></path></svg></div><span class=\"_5255ff8 _4d41763\">已思考（用时 3 秒）</span><div class=\"ds-icon\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.8486 5.5L11.4238 5.92383L8.69727 8.65137C8.44157 8.90706 8.21562 9.13382 8.01172 9.29785C7.79912 9.46883 7.55595 9.61756 7.25 9.66602C7.08435 9.69222 6.91565 9.69222 6.75 9.66602C6.44405 9.61756 6.20088 9.46883 5.98828 9.29785C5.78438 9.13382 5.55843 8.90706 5.30273 8.65137L2.57617 5.92383L2.15137 5.5L3 4.65137L3.42383 5.07617L6.15137 7.80273C6.42595 8.07732 6.59876 8.24849 6.74023 8.3623C6.87291 8.46904 6.92272 8.47813 6.9375 8.48047C6.97895 8.48703 7.02105 8.48703 7.0625 8.48047C7.07728 8.47813 7.12709 8.46904 7.25977 8.3623C7.40124 8.24849 7.57405 8.07732 7.84863 7.80273L10.5762 5.07617L11 4.65137L11.8486 5.5Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"c99b79f8\" style=\"opacity: 0;\"></div></div><div class=\"c2b72bb8\"></div><div class=\"e1675d8b ds-think-content\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进行多项搜索，以覆盖定义、用途、类型和特点等方面。</span></p></div></div><div class=\"_60aa7fb _2ebf166 _623a3ef\" style=\"margin-top: 4px;\"><div class=\"ds-icon _59be4b3\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.748 6.7028C11.748 3.90104 9.47653 1.62976 6.6748 1.62956C3.87291 1.62956 1.60156 3.90091 1.60156 6.7028C1.60176 9.50453 3.87304 11.776 6.6748 11.776C9.47641 11.7759 11.7479 9.50441 11.748 6.7028ZM13.0479 6.7028C13.0477 10.2224 10.1944 13.0757 6.6748 13.0759C3.15507 13.0759 0.300977 10.2225 0.300781 6.7028C0.300781 3.18294 3.15494 0.328781 6.6748 0.328781C10.1945 0.328977 13.0479 3.18307 13.0479 6.7028Z\" fill=\"currentColor\"></path><path d=\"M15.6991 14.7513L14.7792 15.6712L11.3974 12.2894L12.3173 11.3694L15.6991 14.7513Z\" fill=\"currentColor\"></path></svg></div><span class=\"_08cbf39\">搜索到 10 个网页</span><div class=\"_287b564\"><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 0; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 1; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 2; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/1651ky.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 3; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div></div></div><div class=\"e1675d8b ds-think-content\" style=\"margin-top: 4px;\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">搜索结果显示了许多相关条目。为了全面了解易拉宝的定义、用途、特点、类型和材质，我需要同时打开这些结果。</span></p></div></div><div class=\"e4c3fd02 _1fd66e8\" style=\"margin-top: 4px;\"><div class=\"ds-icon c0ae38ce\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.2426 4.80473V6.10551H4.75819V4.80473H11.2426Z\" fill=\"currentColor\"></path><path d=\"M9.40858 7.84478V9.14557H4.75819V7.84478H9.40858Z\" fill=\"currentColor\"></path><path d=\"M9.23438 0.546389C10.1941 0.546389 10.9683 0.544914 11.5859 0.611819C12.2161 0.680096 12.7634 0.825745 13.2393 1.17139C13.5172 1.3733 13.7619 1.61812 13.9639 1.896C14.3096 2.37183 14.4551 2.91922 14.5234 3.54932C14.5903 4.16686 14.5889 4.94133 14.5889 5.90088V10.0981C14.5889 11.0576 14.5903 11.8321 14.5234 12.4497C14.4552 13.0798 14.3094 13.6272 13.9639 14.103C13.7619 14.381 13.5172 14.6257 13.2393 14.8276C12.7633 15.1734 12.2163 15.3189 11.5859 15.3872C10.9683 15.4541 10.1942 15.4536 9.23438 15.4536H6.76563C5.80591 15.4536 5.03168 15.4541 4.41407 15.3872C3.78385 15.3189 3.23665 15.1734 2.76074 14.8276C2.48291 14.6257 2.23802 14.3809 2.03614 14.103C1.69066 13.6272 1.54483 13.0798 1.47657 12.4497C1.40973 11.8321 1.41114 11.0576 1.41114 10.0981V5.90088C1.41113 4.94132 1.40966 4.16686 1.47657 3.54932C1.54488 2.91921 1.69042 2.37184 2.03614 1.896C2.2381 1.61807 2.4828 1.37333 2.76074 1.17139C3.23665 0.825682 3.78386 0.680109 4.41407 0.611819C5.03168 0.544905 5.80591 0.546389 6.76563 0.546389H9.23438ZM6.76563 1.896C5.77586 1.896 5.0876 1.89738 4.55957 1.95459C4.0443 2.01043 3.76214 2.11349 3.55469 2.26416C3.39135 2.38284 3.24761 2.52662 3.12891 2.68994C2.97821 2.89736 2.8752 3.17967 2.81934 3.69483C2.76214 4.22279 2.76075 4.91131 2.76074 5.90088V10.0981C2.76074 11.0876 2.76221 11.7762 2.81934 12.3042C2.87516 12.8194 2.97829 13.1026 3.12891 13.3101C3.24754 13.4733 3.39147 13.6172 3.55469 13.7358C3.76213 13.8865 4.04438 13.9896 4.55957 14.0454C5.0876 14.1026 5.77586 14.103 6.76563 14.103H9.23438C10.2242 14.103 10.9124 14.1026 11.4404 14.0454C11.9556 13.9896 12.2379 13.8865 12.4453 13.7358C12.6086 13.6172 12.7525 13.4733 12.8711 13.3101C13.0217 13.1026 13.1248 12.8195 13.1807 12.3042C13.2378 11.7762 13.2393 11.0876 13.2393 10.0981V5.90088C13.2393 4.91131 13.2379 4.22279 13.1807 3.69483C13.1248 3.17969 13.0218 2.89736 12.8711 2.68994C12.7524 2.52667 12.6086 2.38281 12.4453 2.26416C12.2379 2.11355 11.9556 2.01041 11.4404 1.95459C10.9124 1.8974 10.2241 1.896 9.23438 1.896H6.76563Z\" fill=\"currentColor\"></path></svg></div><div class=\"f2021e64\"><div class=\"_02fb570 _442c8e7\">浏览 4 个页面</div><div class=\"_02fb570 _9887d4d\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">易拉宝</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_02fb570 _9887d4d\"><a href=\"https://baike.baidu.com/item/%E4%BF%83%E9%94%80%E9%81%93%E5%85%B7/3398909?bst=1792185542.2465b019ba5a75dc\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">促销道具</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_02fb570 _9887d4d\"><a href=\"https://beta.chuangkit.com/blog/pingmiansheji98.html\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">制作易拉宝海报尺寸及功能和结构说明_创客贴</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_02fb570 _9887d4d\"><a href=\"https://www.maka.im/baike/10269.html\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">易拉宝设计干货分享 最全易拉宝科普</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div></div></div><div class=\"e1675d8b ds-think-content _767406f\" style=\"margin-top: 4px;\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">这些资料提供了关于易拉宝的全面信息。我的回答将涵盖定义、名称、结构、特点、用途、类型与材质、常用尺寸等方面。我会引用百度百科、促销道具页面、创客贴和MAKA等来源。</span></p></div></div><div class=\"_8f7678d\"></div></div>"
+    },
+    {
+      "tag": "DIV",
+      "cls": "ds-message _63c77b1",
+      "text": "已思考（用时 3 秒）用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进",
+      "style": {
+        "fontSize": "14px",
+        "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "margin": "0px",
+        "padding": "0px",
+        "color": "rgb(128, 0, 128)",
+        "border": "0px none rgb(128, 0, 128)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "gap": "normal",
+        "width": "752px",
+        "height": "1066.6px"
+      },
+      "html": "<div class=\"ds-message _63c77b1\" style=\"--panel-width: 0px;\"><div class=\"_74c0879\" style=\"--collapsible-area-title-height: 34px; --group-title-sticky-base-top: 0px; --group-title-sticky-top: calc(var(--group-title-sticky-base-top) - var(--dsl-virtual-list-transform-y) + var(--dsl-virtual-list-ios-compensation-y));\"><div class=\"_245c867 _34a54ec\"><div class=\"_5ab5d64\"><div class=\"ds-icon _970ac5e\" style=\"font-size: 16px; width: 16px; height: 16px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.00192 6.64454C8.75026 6.64454 9.35732 7.25169 9.35739 8.00001C9.35739 8.74838 8.7503 9.35548 8.00192 9.35548C7.25367 9.35533 6.64743 8.74829 6.64743 8.00001C6.6475 7.25178 7.25371 6.64468 8.00192 6.64454Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.97165 1.29981C11.5853 0.718916 13.271 0.642197 14.3144 1.68555C15.3577 2.72902 15.2811 4.41466 14.7002 6.02833C14.4707 6.66561 14.1504 7.32937 13.75 8.00001C14.1504 8.67062 14.4707 9.33444 14.7002 9.97169C15.2811 11.5854 15.3578 13.271 14.3144 14.3145C13.271 15.3579 11.5854 15.2811 9.97165 14.7002C9.3344 14.4708 8.67059 14.1505 7.99997 13.75C7.32933 14.1505 6.66558 14.4708 6.02829 14.7002C4.41461 15.2811 2.72899 15.3578 1.68552 14.3145C0.642155 13.271 0.71887 11.5854 1.29977 9.97169C1.52915 9.33454 1.84865 8.67049 2.24899 8.00001C1.84866 7.32953 1.52915 6.66544 1.29977 6.02833C0.718852 4.41459 0.64207 2.729 1.68552 1.68555C2.72897 0.642112 4.41456 0.718887 6.02829 1.29981C6.66541 1.52918 7.32949 1.8487 7.99997 2.24903C8.67045 1.84869 9.33451 1.52919 9.97165 1.29981ZM12.9404 9.2129C12.4391 9.893 11.8616 10.5681 11.2148 11.2149C10.568 11.8616 9.89296 12.4391 9.21286 12.9404C9.62532 13.1579 10.0271 13.338 10.4121 13.4766C11.9146 14.0174 12.9172 13.8738 13.3955 13.3955C13.8737 12.9173 14.0174 11.9146 13.4765 10.4121C13.3379 10.0271 13.1578 9.62535 12.9404 9.2129ZM3.05856 9.2129C2.84121 9.62523 2.66197 10.0272 2.52341 10.4121C1.98252 11.9146 2.12627 12.9172 2.60446 13.3955C3.08278 13.8737 4.08544 14.0174 5.58786 13.4766C5.97264 13.338 6.37389 13.1577 6.7861 12.9404C6.10624 12.4393 5.43168 11.8614 4.78513 11.2149C4.13823 10.5679 3.55992 9.89313 3.05856 9.2129ZM7.99899 3.792C7.23179 4.31419 6.45306 4.95512 5.70407 5.70411C4.95509 6.45309 4.31415 7.23184 3.79196 7.99903C4.3143 8.76666 4.95471 9.54653 5.70407 10.2959C6.45309 11.0449 7.23271 11.6848 7.99997 12.207C8.76725 11.6848 9.54683 11.0449 10.2959 10.2959C11.0449 9.54686 11.6848 8.76729 12.207 8.00001C11.6848 7.23275 11.0449 6.45312 10.2959 5.70411C9.5465 4.95475 8.76662 4.31434 7.99899 3.792ZM5.58786 2.52344C4.08533 1.98255 3.08272 2.12625 2.60446 2.6045C2.12621 3.08275 1.98252 4.08536 2.52341 5.5879C2.66189 5.97253 2.8414 6.37409 3.05856 6.78614C3.55983 6.10611 4.1384 5.43189 4.78513 4.78516C5.43186 4.13843 6.10606 3.55987 6.7861 3.0586C6.37405 2.84144 5.97249 2.66192 5.58786 2.52344ZM13.3955 2.6045C12.9172 2.12631 11.9146 1.98257 10.4121 2.52344C10.0272 2.66201 9.62519 2.84125 9.21286 3.0586C9.8931 3.55996 10.5679 4.13827 11.2148 4.78516C11.8614 5.43172 12.4392 6.10627 12.9404 6.78614C13.1577 6.37393 13.338 5.97267 13.4765 5.5879C14.0174 4.08549 13.8736 3.08281 13.3955 2.6045Z\" fill=\"currentColor\"></path></svg></div><span class=\"_5255ff8 _4d41763\">已思考（用时 3 秒）</span><div class=\"ds-icon\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.8486 5.5L11.4238 5.92383L8.69727 8.65137C8.44157 8.90706 8.21562 9.13382 8.01172 9.29785C7.79912 9.46883 7.55595 9.61756 7.25 9.66602C7.08435 9.69222 6.91565 9.69222 6.75 9.66602C6.44405 9.61756 6.20088 9.46883 5.98828 9.29785C5.78438 9.13382 5.55843 8.90706 5.30273 8.65137L2.57617 5.92383L2.15137 5.5L3 4.65137L3.42383 5.07617L6.15137 7.80273C6.42595 8.07732 6.59876 8.24849 6.74023 8.3623C6.87291 8.46904 6.92272 8.47813 6.9375 8.48047C6.97895 8.48703 7.02105 8.48703 7.0625 8.48047C7.07728 8.47813 7.12709 8.46904 7.25977 8.3623C7.40124 8.24849 7.57405 8.07732 7.84863 7.80273L10.5762 5.07617L11 4.65137L11.8486 5.5Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"c99b79f8\" style=\"opacity: 0;\"></div></div><div class=\"c2b72bb8\"></div><div class=\"e1675d8b ds-think-content\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">用户想知道“易拉宝”是什么。这是一个关于展示器材的简单定义问题。我需要提供清晰简洁的解释。为了全面获取信息，我将同时进行多项搜索，以覆盖定义、用途、类型和特点等方面。</span></p></div></div><div class=\"_60aa7fb _2ebf166 _623a3ef\" style=\"margin-top: 4px;\"><div class=\"ds-icon _59be4b3\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.748 6.7028C11.748 3.90104 9.47653 1.62976 6.6748 1.62956C3.87291 1.62956 1.60156 3.90091 1.60156 6.7028C1.60176 9.50453 3.87304 11.776 6.6748 11.776C9.47641 11.7759 11.7479 9.50441 11.748 6.7028ZM13.0479 6.7028C13.0477 10.2224 10.1944 13.0757 6.6748 13.0759C3.15507 13.0759 0.300977 10.2225 0.300781 6.7028C0.300781 3.18294 3.15494 0.328781 6.6748 0.328781C10.1945 0.328977 13.0479 3.18307 13.0479 6.7028Z\" fill=\"currentColor\"></path><path d=\"M15.6991 14.7513L14.7792 15.6712L11.3974 12.2894L12.3173 11.3694L15.6991 14.7513Z\" fill=\"currentColor\"></path></svg></div><span class=\"_08cbf39\">搜索到 10 个网页</span><div class=\"_287b564\"><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 0; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 1; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 2; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/1651ky.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 3; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div></div></div><div class=\"e1675d8b ds-think-content\" style=\"margin-top: 4px;\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">搜索结果显示了许多相关条目。为了全面了解易拉宝的定义、用途、特点、类型和材质，我需要同时打开这些结果。</span></p></div></div><div class=\"e4c3fd02 _1fd66e8\" style=\"margin-top: 4px;\"><div class=\"ds-icon c0ae38ce\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.2426 4.80473V6.10551H4.75819V4.80473H11.2426Z\" fill=\"currentColor\"></path><path d=\"M9.40858 7.84478V9.14557H4.75819V7.84478H9.40858Z\" fill=\"currentColor\"></path><path d=\"M9.23438 0.546389C10.1941 0.546389 10.9683 0.544914 11.5859 0.611819C12.2161 0.680096 12.7634 0.825745 13.2393 1.17139C13.5172 1.3733 13.7619 1.61812 13.9639 1.896C14.3096 2.37183 14.4551 2.91922 14.5234 3.54932C14.5903 4.16686 14.5889 4.94133 14.5889 5.90088V10.0981C14.5889 11.0576 14.5903 11.8321 14.5234 12.4497C14.4552 13.0798 14.3094 13.6272 13.9639 14.103C13.7619 14.381 13.5172 14.6257 13.2393 14.8276C12.7633 15.1734 12.2163 15.3189 11.5859 15.3872C10.9683 15.4541 10.1942 15.4536 9.23438 15.4536H6.76563C5.80591 15.4536 5.03168 15.4541 4.41407 15.3872C3.78385 15.3189 3.23665 15.1734 2.76074 14.8276C2.48291 14.6257 2.23802 14.3809 2.03614 14.103C1.69066 13.6272 1.54483 13.0798 1.47657 12.4497C1.40973 11.8321 1.41114 11.0576 1.41114 10.0981V5.90088C1.41113 4.94132 1.40966 4.16686 1.47657 3.54932C1.54488 2.91921 1.69042 2.37184 2.03614 1.896C2.2381 1.61807 2.4828 1.37333 2.76074 1.17139C3.23665 0.825682 3.78386 0.680109 4.41407 0.611819C5.03168 0.544905 5.80591 0.546389 6.76563 0.546389H9.23438ZM6.76563 1.896C5.77586 1.896 5.0876 1.89738 4.55957 1.95459C4.0443 2.01043 3.76214 2.11349 3.55469 2.26416C3.39135 2.38284 3.24761 2.52662 3.12891 2.68994C2.97821 2.89736 2.8752 3.17967 2.81934 3.69483C2.76214 4.22279 2.76075 4.91131 2.76074 5.90088V10.0981C2.76074 11.0876 2.76221 11.7762 2.81934 12.3042C2.87516 12.8194 2.97829 13.1026 3.12891 13.3101C3.24754 13.4733 3.39147 13.6172 3.55469 13.7358C3.76213 13.8865 4.04438 13.9896 4.55957 14.0454C5.0876 14.1026 5.77586 14.103 6.76563 14.103H9.23438C10.2242 14.103 10.9124 14.1026 11.4404 14.0454C11.9556 13.9896 12.2379 13.8865 12.4453 13.7358C12.6086 13.6172 12.7525 13.4733 12.8711 13.3101C13.0217 13.1026 13.1248 12.8195 13.1807 12.3042C13.2378 11.7762 13.2393 11.0876 13.2393 10.0981V5.90088C13.2393 4.91131 13.2379 4.22279 13.1807 3.69483C13.1248 3.17969 13.0218 2.89736 12.8711 2.68994C12.7524 2.52667 12.6086 2.38281 12.4453 2.26416C12.2379 2.11355 11.9556 2.01041 11.4404 1.95459C10.9124 1.8974 10.2241 1.896 9.23438 1.896H6.76563Z\" fill=\"currentColor\"></path></svg></div><div class=\"f2021e64\"><div class=\"_02fb570 _442c8e7\">浏览 4 个页面</div><div class=\"_02fb570 _9887d4d\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">易拉宝</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_02fb570 _9887d4d\"><a href=\"https://baike.baidu.com/item/%E4%BF%83%E9%94%80%E9%81%93%E5%85%B7/3398909?bst=1792185542.2465b019ba5a75dc\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">促销道具</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_02fb570 _9887d4d\"><a href=\"https://beta.chuangkit.com/blog/pingmiansheji98.html\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">制作易拉宝海报尺寸及功能和结构说明_创客贴</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_02fb570 _9887d4d\"><a href=\"https://www.maka.im/baike/10269.html\" target=\"_blank\" rel=\"noreferrer\" class=\"_04ab7b1\">易拉宝设计干货分享 最全易拉宝科普</a><div class=\"ds-icon a3ffa4db\" style=\"font-size: 14px; width: 14px; height: 14px;\"><svg width=\"8\" height=\"14\" viewBox=\"0 0 8 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.54199 8.62824C6.54199 8.44193 6.54146 8.28829 6.53906 8.15851L1.11719 13.5814L0.728516 13.1927L0.339844 12.803L5.76172 7.38019C5.63201 7.3778 5.47812 7.37824 5.29199 7.37824H1.43555V6.27863H5.29199C5.65471 6.27863 5.97167 6.27814 6.22852 6.30597C6.49541 6.33493 6.76232 6.3998 7.00293 6.57452C7.13452 6.67013 7.25108 6.78571 7.34668 6.9173C7.52157 7.15808 7.5863 7.4256 7.61523 7.69269C7.64305 7.94948 7.64258 8.26562 7.64258 8.62824V12.4857H6.54199V8.62824Z\" fill=\"currentColor\"></path></svg></div></div></div></div><div class=\"e1675d8b ds-think-content _767406f\" style=\"margin-top: 4px;\"><div class=\"ddd26891 _9b52f6c\" style=\"width: 16px; height: 16px;\"><div class=\"a510c7ce _0652043\"></div></div><div class=\"_9ecc93a\"></div><div class=\"ds-markdown\"><p class=\"ds-markdown-paragraph\"><span class=\"\">这些资料提供了关于易拉宝的全面信息。我的回答将涵盖定义、名称、结构、特点、用途、类型与材质、常用尺寸等方面。我会引用百度百科、促销道具页面、创客贴和MAKA等来源。</span></p></div></div><div class=\"_8f7678d\"></div></div><div class=\"ds-markdown ds-assistant-message-main-content\"><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">易拉宝是一种便携式的立式宣传海报展示架</span></strong><span class=\"\">。它的名字很形象，因为使用时可以将印好的画面从底座里“容易地拉出来”并固定好，因此得名。在广告行业，它也叫易拉架、易拉得或海报架</span><span class=\"\">。</span><span class=\"_5f9bba8\" data-citation-group=\"1\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"1\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">1</span></span></a><a href=\"https://baike.baidu.com/item/%E4%BF%83%E9%94%80%E9%81%93%E5%85%B7/3398909?bst=1792185542.2465b019ba5a75dc\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"4\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">4</span></span></a></span></p><h3><span class=\"\">🏗️ 它是怎么构成的？</span></h3><p class=\"ds-markdown-paragraph\"><span class=\"\">易拉宝的核心是一个</span><strong><span class=\"\">座地卷轴</span></strong><span class=\"\">，里面装有弹簧，可以把海报卷起来收纳。卷轴上方连接着一根</span><strong><span class=\"\">可伸缩的支撑杆</span></strong><span class=\"\">，顶部有个扣子用来固定海报的顶端。使用时拉出画面，用支撑杆撑直；不用时收回，画面就自动卷回底座里，整体会缩成一个长筒状。</span><span class=\"_5f9bba8\" data-citation-group=\"3\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"1\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">1</span></span></a><a href=\"https://www.maka.im/baike/10269.html\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"9\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">9</span></span></a></span></p><h3><span class=\"\">✨ 主要特点与用途</span></h3><ul><li><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">核心优势</span></strong><span class=\"\">：</span><strong><span class=\"\">轻巧便携</span></strong><span class=\"\">（重量一般在</span><strong><span class=\"\">2～5公斤</span></strong><span class=\"\">）、</span><strong><span class=\"\">安装极简</span></strong><span class=\"\">（拉开即用）、</span><strong><span class=\"\">经济实用</span></strong><span class=\"\">（可反复更换画面）。</span><span class=\"_5f9bba8\" data-citation-group=\"6\"><a href=\"https://baike.baidu.com/item/%E4%BF%83%E9%94%80%E9%81%93%E5%85%B7/3398909?bst=1792185542.2465b019ba5a75dc\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"4\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">4</span></span></a></span></p></li><li><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">常见用途</span></strong><span class=\"\">：适用于</span><strong><span class=\"\">会议、展览、门店促销、新品发布、招聘、路演</span></strong><span class=\"\">等场合。你经常能在商场、展会或临时摊位旁看到它。</span><span class=\"_5f9bba8\" data-citation-group=\"7\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"1\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">1</span></span></a></span></p></li></ul><h3><span class=\"\">📐 常见类型与规格</span></h3><ul><li><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">材质</span></strong><span class=\"\">：支架主要为</span><strong><span class=\"\">铝合金</span></strong><span class=\"\">或</span><strong><span class=\"\">塑钢</span></strong><span class=\"\">。铝合金更耐用，可多次换画；塑钢则性价比高，使用也很普遍。画面材质常用PP合成纸、相纸或PVC胶片等。</span><span class=\"_5f9bba8\" data-citation-group=\"9\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"1\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">1</span></span></a><a href=\"https://beta.chuangkit.com/blog/pingmiansheji98.html\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"7\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">7</span></span></a></span></p></li><li><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">经典尺寸</span></strong><span class=\"\">：最通用的标准尺寸是 </span><strong><span class=\"\">80cm × 200cm</span></strong><span class=\"\">（画面通常为78cm×200cm）。其他常见宽度还有</span><strong><span class=\"\">60cm、85cm、100cm、120cm</span></strong><span class=\"\">等。</span><span class=\"_5f9bba8\" data-citation-group=\"11\"><a href=\"https://baike.baidu.com/item/%E6%98%93%E6%8B%89%E5%AE%9D/10786842?fromtitle=%E6%98%93%E6%8B%89%E6%9E%B6&amp;fromid=4187930&amp;bst=1790073821.63e05153b9f3d68d#1#1#1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"1\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">1</span></span></a><a href=\"https://beta.chuangkit.com/blog/pingmiansheji98.html\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"7\"><span class=\"ds-markdown-cite\" style=\"display: inline; cursor: pointer; padding: 1.8px 4px 1.8px;\"><span style=\"opacity: 0; margin: 0px 0.525px;\">-</span><span style=\"position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);\">7</span></span></a></span></p></li><li><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">特殊类型</span></strong><span class=\"\">：除了常规款，还有</span><strong><span class=\"\">桌面易拉宝</span></strong><span class=\"\">（小型化）、</span><strong><span class=\"\">双面易拉宝</span></strong><span class=\"\">、</span><strong><span class=\"\">电动易拉宝</span></strong><span class=\"\">等变体，以适应不同展示需求。</span></p></li></ul><p class=\"ds-markdown-paragraph\"><span class=\"\">总的来说，易拉宝就是一种成本较低、布展撤展都很快捷的“立起来的海报”。</span></p></div><div class=\"f93f59e4\"><div class=\"_287b564\"><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 0; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 1; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 2; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/1651ky.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div><div class=\"_8e95474 site_logo_back\" style=\"--site-icon-index: 3; pointer-events: none;\"><img src=\"https://cdn.deepseek.com/site-icons/baidu.com\" alt=\"\" class=\"site_logo_img\" style=\"display: block;\"></div></div><span class=\"_669a677\">10 个网页</span></div></div>"
+    }
+  ],
+  "textarea": [
+    {
+      "tag": "DIV",
+      "cls": "bf38813a",
+      "text": "",
+      "style": {
+        "fontSize": "16px",
+        "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "margin": "0px",
+        "padding": "0px",
+        "color": "rgb(128, 0, 128)",
+        "border": "0px none rgb(128, 0, 128)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "gap": "normal",
+        "width": "78px",
+        "height": "34px"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--s ds-button--icon-relative-m f02f0e25",
+      "text": "",
+      "style": {
+        "fontSize": "14px",
+        "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "lineHeight": "22px",
+        "fontWeight": "400",
+        "margin": "0px 10px 0px 0px",
+        "padding": "0px",
+        "color": "rgb(15, 17, 21)",
+        "border": "0px none rgb(15, 17, 21)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "4096px",
+        "gap": "0px",
+        "width": "34px",
+        "height": "34px"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ds-button ds-button--primary ds-button--filled ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--disabled _52c986b bd74640a",
+      "text": "",
+      "style": {
+        "fontSize": "14px",
+        "fontFamily": "quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "lineHeight": "22px",
+        "fontWeight": "500",
+        "margin": "0px",
+        "padding": "0px",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "backgroundColor": "rgb(57, 100, 254)",
+        "borderRadius": "50%",
+        "gap": "4px",
+        "width": "34px",
+        "height": "34px"
+      }
+    }
+  ],
+  "tokens": [
+    [
+      "--dsw-font-markdown-table-head-font-size",
+      "15px"
+    ],
+    [
+      "--dsw-font-markdown-base-italic-font-size",
+      "16px"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small",
+      "14px/24px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-base-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-table-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-h1-font-size",
+      "24px"
+    ],
+    [
+      "--dsw-font-markdown-h4",
+      "600 16px/28px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-h1-font-weight",
+      "700"
+    ],
+    [
+      "--dsw-font-markdown-h3-font-weight",
+      "700"
+    ],
+    [
+      "--dsw-font-markdown-table-line-height",
+      "25px"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-table-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-font-weight",
+      "600"
+    ],
+    [
+      "--dsw-font-markdown-h4-font-size",
+      "16px"
+    ],
+    [
+      "--dsw-font-markdown-h3-line-height",
+      "30px"
+    ],
+    [
+      "--dsw-font-markdown-h2",
+      "700 22px/32px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-alias-markdown-code-block-banner",
+      "#f9fafb"
+    ],
+    [
+      "--dsw-font-markdown-base-strong",
+      "600 16px/28px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-base-font-size",
+      "16px"
+    ],
+    [
+      "--dsw-font-markdown-small-font-size",
+      "14px"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-italic-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-base-italic-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-italic-font-weight",
+      "600"
+    ],
+    [
+      "--dsw-font-markdown-base-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-italic-font-style",
+      "italic"
+    ],
+    [
+      "--dsw-font-markdown-code-block-font-size",
+      "13px"
+    ],
+    [
+      "--dsw-font-markdown-base-italic",
+      "italic 16px/28px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-code-line-height",
+      "22px"
+    ],
+    [
+      "--dsw-font-markdown-h1",
+      "700 24px/34px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-table-head-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-base-italic-font-style",
+      "italic"
+    ],
+    [
+      "--dsw-font-markdown-code-block-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-font-markdown-code-block-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-italic-line-height",
+      "24px"
+    ],
+    [
+      "--dsw-font-markdown-small-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-h3",
+      "700 20px/30px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-code-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-alias-markdown-code-block",
+      "#f9fafb"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-italic-font-style",
+      "italic"
+    ],
+    [
+      "--dsw-font-markdown-base",
+      "16px/28px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-h1-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-italic-font-size",
+      "16px"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-font-size",
+      "16px"
+    ],
+    [
+      "--dsw-font-markdown-small-italic-line-height",
+      "24px"
+    ],
+    [
+      "--dsw-font-markdown-small-strong",
+      "600 14px/24px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-line-height",
+      "28px"
+    ],
+    [
+      "--dsw-alias-markdown-code-segment-selected",
+      "#fff"
+    ],
+    [
+      "--dsw-font-markdown-table-head-font-weight",
+      "500"
+    ],
+    [
+      "--dsw-font-markdown-table-head-line-height",
+      "25px"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-h3-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-code-font-family",
+      "Menlo, Monaco,  Consolas, \"Cascadia Mono\",  \"Ubuntu Mono\",  \"DejaVu Sans Mono\",  \"Liberation Mono\",  \"JetBrains Mono\", \"Fira Code\",  Cousine,  \"Roboto Mono\",  \"Courier New\", Courier,  sans-serif, system-ui"
+    ],
+    [
+      "--dsw-font-markdown-base-line-height",
+      "28px"
+    ],
+    [
+      "--dsw-font-markdown-code-block-font-family",
+      "Menlo, Monaco,  Consolas, \"Cascadia Mono\",  \"Ubuntu Mono\",  \"DejaVu Sans Mono\",  \"Liberation Mono\",  \"JetBrains Mono\", \"Fira Code\",  Cousine,  \"Roboto Mono\",  \"Courier New\", Courier,  sans-serif, system-ui"
+    ],
+    [
+      "--dsw-font-markdown-h4-font-weight",
+      "600"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-italic-line-height",
+      "28px"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-italic-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-font-size",
+      "14px"
+    ],
+    [
+      "--dsw-font-markdown-small-italic",
+      "italic 14px/24px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-italic-font-size",
+      "14px"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-font-weight",
+      "600"
+    ],
+    [
+      "--dsw-font-markdown-h2-line-height",
+      "32px"
+    ],
+    [
+      "--dsw-font-markdown-base-italic-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-font-markdown-h4-line-height",
+      "28px"
+    ],
+    [
+      "--dsw-font-markdown-base-strong-italic",
+      "italic 600 16px/28px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-italic",
+      "italic 600 14px/24px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-alias-markdown-inline-code",
+      "#ebeef2"
+    ],
+    [
+      "--dsw-font-markdown-table-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-font-markdown-table-font-size",
+      "15px"
+    ],
+    [
+      "--dsw-font-markdown-table",
+      "15px/25px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-h2-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-italic-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-font-markdown-code-font-size",
+      "14px"
+    ],
+    [
+      "--dsw-font-markdown-h4-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-h2-font-weight",
+      "700"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-italic-font-size",
+      "14px"
+    ],
+    [
+      "--dsw-font-markdown-code-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-font-markdown-small-italic-font-style",
+      "italic"
+    ],
+    [
+      "--dsw-font-markdown-h3-font-size",
+      "20px"
+    ],
+    [
+      "--dsw-font-markdown-h1-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-table-head-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-font-markdown-base-italic-line-height",
+      "28px"
+    ],
+    [
+      "--dsw-alias-markdown-tag",
+      "#f1f3f5"
+    ],
+    [
+      "--dsw-alias-markdown-placeholder",
+      "#f5f6f7"
+    ],
+    [
+      "--dsw-font-markdown-h2-font-style",
+      "normal"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-italic-font-weight",
+      "600"
+    ],
+    [
+      "--dsw-font-markdown-h3-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-code-block",
+      "13px/22px Menlo, Monaco,  Consolas, \"Cascadia Mono\",  \"Ubuntu Mono\",  \"DejaVu Sans Mono\",  \"Liberation Mono\",  \"JetBrains Mono\", \"Fira Code\",  Cousine,  \"Roboto Mono\",  \"Courier New\", Courier,  sans-serif, system-ui"
+    ],
+    [
+      "--dsw-font-markdown-base-font-weight",
+      "400"
+    ],
+    [
+      "--dsw-alias-markdown-citation",
+      "#ebeef2"
+    ],
+    [
+      "--dsw-font-markdown-h1-line-height",
+      "34px"
+    ],
+    [
+      "--dsw-font-markdown-table-head",
+      "500 15px/25px \"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--ds-font-family-code",
+      "Menlo, Monaco,  Consolas, \"Cascadia Mono\",  \"Ubuntu Mono\",  \"DejaVu Sans Mono\",  \"Liberation Mono\",  \"JetBrains Mono\", \"Fira Code\",  Cousine,  \"Roboto Mono\",  \"Courier New\", Courier,  sans-serif, system-ui"
+    ],
+    [
+      "--dsw-font-markdown-code",
+      "14px/22px Menlo, Monaco,  Consolas, \"Cascadia Mono\",  \"Ubuntu Mono\",  \"DejaVu Sans Mono\",  \"Liberation Mono\",  \"JetBrains Mono\", \"Fira Code\",  Cousine,  \"Roboto Mono\",  \"Courier New\", Courier,  sans-serif, system-ui"
+    ],
+    [
+      "--dsw-font-markdown-small-strong-line-height",
+      "24px"
+    ],
+    [
+      "--dsw-font-markdown-small-italic-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-font-markdown-small-line-height",
+      "24px"
+    ],
+    [
+      "--dsw-font-markdown-h4-font-family",
+      "\"quote-cjk-patch\", \"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+    ],
+    [
+      "--dsw-alias-markdown-code-segment-unselected",
+      "#f1f3f5"
+    ],
+    [
+      "--dsw-font-markdown-h2-font-size",
+      "22px"
+    ],
+    [
+      "--dsw-font-markdown-code-block-line-height",
+      "22px"
+    ]
+  ]
+}
