@@ -1,0 +1,30 @@
+{
+  "name": "dswui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/inline.mjs",
+    "preview": "vite preview",
+    "mock": "node tools/mock-server.cjs"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.6",
+    "highlight.js": "^11.11.1",
+    "katex": "^0.16.22",
+    "lottie-web": "^5.13.0",
+    "markdown-it": "^14.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.3.5"
+  }
+}

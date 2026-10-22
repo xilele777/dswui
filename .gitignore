@@ -1,0 +1,23 @@
+node_modules
+dist
+*.log
+.DS_Store
+
+# Local browser sessions and duplicate working archives
+/.playwright-mcp/
+/.workbuddy/backup/
+/.workbuddy/reference-*/
+/.workbuddy/memory/
+
+# Downloaded upstream build artifacts and disposable probe output
+/docs/live-probe/main.js
+/docs/live-probe/vendors.js
+/docs/live-probe/main.css
+/docs/live-probe/main.pretty.css
+/docs/live-probe/live-home.html
+/docs/live-probe/test.txt
+
+# Local credentials
+.env
+.env.*
+!.env.example
