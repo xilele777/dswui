@@ -1,0 +1,171 @@
+{
+  "empty": {
+    "sidebar": {
+      "cls": "sidebar ",
+      "text": "开启新对话\n暂无历史对话\nD\nDeepSeek 官方",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 261,
+        "h": 900
+      },
+      "bg": "rgb(249, 250, 251)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "0px",
+      "font": "400 16px/normal",
+      "padding": "0px",
+      "shadow": "none"
+    },
+    "brand": {
+      "cls": "brand",
+      "text": "",
+      "box": {
+        "x": 16,
+        "y": 21,
+        "w": 143,
+        "h": 23
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "0px",
+      "font": "600 15px/normal",
+      "padding": "0px",
+      "shadow": "none"
+    },
+    "newChat": {
+      "cls": "new-chat",
+      "text": "开启新对话",
+      "box": {
+        "x": 12,
+        "y": 70,
+        "w": 236,
+        "h": 40
+      },
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "100px",
+      "font": "500 14px/22px",
+      "padding": "0px 16px",
+      "shadow": "rgba(72, 104, 178, 0.04) 0px -2px 2px 0px, rgba(106, 111, 117, 0.09) 0px 2px 2px 0px, rgba(72, 104, 178, 0.08) 0px 1px 2px 0px"
+    },
+    "session": null,
+    "welcome": {
+      "cls": "welcome",
+      "text": "今天有什么可以帮到你？\n深度思考\n智能搜索\n内容由 AI 生成，请仔细甄别",
+      "box": {
+        "x": 452,
+        "y": 0,
+        "w": 840,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "0px",
+      "font": "400 16px/normal",
+      "padding": "0px 32px 64px",
+      "shadow": "none"
+    },
+    "welcomeHeading": {
+      "cls": "",
+      "text": "今天有什么可以帮到你？",
+      "box": {
+        "x": 762,
+        "y": 315,
+        "w": 264,
+        "h": 32
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "0px",
+      "font": "600 24px/32px",
+      "padding": "0px",
+      "shadow": "none"
+    },
+    "composer": {
+      "cls": "composer ",
+      "text": "深度思考\n智能搜索",
+      "box": {
+        "x": 484,
+        "y": 374,
+        "w": 776,
+        "h": 86
+      },
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "22px",
+      "font": "400 16px/normal",
+      "padding": "0px",
+      "shadow": "none"
+    },
+    "textarea": {
+      "cls": "",
+      "text": "",
+      "box": {
+        "x": 485,
+        "y": 375,
+        "w": 774,
+        "h": 36
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(15, 17, 21)",
+      "radius": "0px",
+      "font": "400 16px/24px",
+      "padding": "12px 16px 0px",
+      "shadow": "none"
+    },
+    "pill": {
+      "cls": "pill ",
+      "text": "深度思考",
+      "box": {
+        "x": 495,
+        "y": 418,
+        "w": 103,
+        "h": 30
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(97, 102, 107)",
+      "radius": "120px",
+      "font": "400 14px/22px",
+      "padding": "4px 14px",
+      "shadow": "none"
+    },
+    "send": {
+      "cls": "send-btn",
+      "text": "",
+      "box": {
+        "x": 1217,
+        "y": 417,
+        "w": 32,
+        "h": 32
+      },
+      "bg": "rgb(241, 243, 245)",
+      "color": "rgb(173, 178, 184)",
+      "radius": "50%",
+      "font": "400 13.3333px/normal",
+      "padding": "0px",
+      "shadow": "none"
+    },
+    "bubble": null,
+    "assistantBody": null,
+    "think": null,
+    "actions": null,
+    "code": null,
+    "table": null,
+    "disclaimer": {
+      "cls": "disclaimer",
+      "text": "内容由 AI 生成，请仔细甄别",
+      "box": {
+        "x": 484,
+        "y": 468,
+        "w": 776,
+        "h": 15
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(173, 178, 184)",
+      "radius": "0px",
+      "font": "400 12px/normal",
+      "padding": "0px",
+      "shadow": "none"
+    }
+  }
+}
