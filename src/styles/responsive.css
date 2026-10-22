@@ -1,0 +1,41 @@
+/* 移动端 */
+.mobile-only {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-only {
+    display: grid;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    transform: translateX(0);
+    box-shadow: var(--shadow-pop);
+  }
+  .sidebar.collapsed {
+    margin-left: 0;
+    transform: translateX(-100%);
+  }
+  .side-mask {
+    position: fixed;
+    inset: 0;
+    background: var(--overlay);
+    z-index: 39;
+  }
+  .msg-user .bubble {
+    max-width: 88%;
+  }
+  .welcome h1 {
+    font-size: 22px;
+  }
+  .new-chat kbd {
+    display: none;
+  }
+  .search-overlay {
+    padding-top: 68px;
+  }
+}
+
