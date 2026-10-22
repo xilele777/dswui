@@ -1,0 +1,123 @@
+/* ============================ 搜索层 ============================ */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 102px;
+  background: rgba(15, 17, 21, 0.34);
+  backdrop-filter: blur(7px);
+  animation: fade-in 0.15s var(--ease);
+}
+.search-dialog {
+  width: min(660px, calc(100vw - 32px));
+  max-height: min(520px, calc(100vh - 132px));
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--bg-layer-1);
+  box-shadow: var(--shadow-pop);
+}
+.search-dialog-input {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border-l1);
+}
+.search-dialog-input > svg {
+  width: 20px;
+  height: 20px;
+  color: var(--label-secondary);
+}
+.search-dialog-input input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+}
+.search-dialog-input input::placeholder {
+  color: var(--label-dimmed);
+}
+.search-dialog-input button {
+  width: 28px;
+  height: 28px;
+  border-left: 1px solid var(--border-l1);
+  color: var(--label-tertiary);
+  font-size: 22px;
+  line-height: 1;
+}
+.search-dialog-input button:hover {
+  color: var(--label-primary);
+}
+.search-results {
+  max-height: 460px;
+  overflow-y: auto;
+  padding: 6px;
+}
+.search-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 68px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+.search-result:hover {
+  background: var(--hover);
+}
+.search-result-icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-l2);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--label-tertiary);
+  flex: none;
+}
+.search-result-icon svg {
+  width: 15px;
+  height: 15px;
+}
+.search-result-copy {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.search-result-copy strong,
+.search-result-copy span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search-result-copy strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+.search-result-copy span,
+.search-result time {
+  color: var(--label-tertiary);
+  font-size: 12px;
+}
+.search-result time {
+  align-self: flex-start;
+  padding-top: 2px;
+  white-space: nowrap;
+}
+.search-empty {
+  padding: 28px 12px;
+  color: var(--label-tertiary);
+  font-size: 13px;
+  text-align: center;
+}
+
