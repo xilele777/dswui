@@ -21,6 +21,11 @@ export function Sidebar({ onOpenSettings, onOpenSearch }: SidebarProps) {
   const controller = useSessionController();
   const history = useMemo(() => sessions.filter((s) => s.messages.length > 0), [sessions]);
   const groups = useMemo(() => groupSessions(history), [history]);
+  const goHome = () => {
+    controller.exitMulti();
+    newSession();
+    if (window.innerWidth < 768) setSidebarOpen(false);
+  };
 
   return (
     <>
@@ -28,13 +33,13 @@ export function Sidebar({ onOpenSettings, onOpenSearch }: SidebarProps) {
         <SidebarHeader
           onOpenSearch={onOpenSearch}
           onCollapse={() => setSidebarOpen(false)}
-          onNewChat={() => newSession()}
+          onNewChat={goHome}
           multi={controller.multi}
           selectedCount={controller.selected.size}
           onExitMulti={controller.exitMulti}
         />
 
-        <div className="session-region">
+        <div className={`session-region ${history.length === 0 ? 'empty' : ''}`}>
           <SessionList
             groups={groups}
             total={history.length}
@@ -49,13 +54,13 @@ export function Sidebar({ onOpenSettings, onOpenSearch }: SidebarProps) {
           : <SidebarFooter provider={provider} onOpenSettings={onOpenSettings} />}
       </aside>
       {collapsed && <div className="collapsed-nav">
-        <button className="collapsed-brand" onClick={() => setSidebarOpen(true)} aria-label="打开边栏">
+        <button className="collapsed-brand" onClick={goHome} title="返回主页" aria-label="返回主页">
           <img src={deepseekMark} alt="DeepSeek" />
         </button>
         <div className="collapsed-actions">
           <button className="icon-btn" onClick={() => setSidebarOpen(true)} title="打开边栏" aria-label="打开边栏"><IconSidebar /></button>
           <button className="icon-btn" onClick={onOpenSearch} title="搜索对话" aria-label="搜索对话"><IconSearch /></button>
-          <button className="icon-btn" onClick={() => newSession()} title="开启新对话" aria-label="开启新对话"><IconNewChat width={16} height={16} /></button>
+          <button className="icon-btn" onClick={goHome} title="开启新对话" aria-label="开启新对话"><IconNewChat width={16} height={16} /></button>
         </div>
       </div>}
       {!collapsed && <div className="side-mask mobile-only" onClick={() => setSidebarOpen(false)} />}

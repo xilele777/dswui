@@ -1,4 +1,5 @@
 import { SessionGroup } from './SessionGroup';
+import { IconEmptyHistory } from '../Icons';
 import type { SessionController, SessionGroupView } from './types';
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 
 export function SessionList({ groups, total, activeSessionId, controller }: Props) {
   return (
-    <div className={`session-list ${controller.multi ? 'multi' : ''}`}>
+    <div className={`session-list ${controller.multi ? 'multi' : ''} ${!total ? 'empty' : ''}`}>
       {groups.map((group, index) => (
         <SessionGroup
           key={group.label}
@@ -22,6 +23,7 @@ export function SessionList({ groups, total, activeSessionId, controller }: Prop
       ))}
       {!total && (
         <div className="session-empty">
+          <IconEmptyHistory />
           <span>暂无历史对话</span>
         </div>
       )}

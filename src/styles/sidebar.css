@@ -103,6 +103,9 @@ html[data-theme="dark"] .session-region::after {
   overscroll-behavior: contain;
 }
 .session-list::-webkit-scrollbar { display: none; }
+.session-region.empty::after { display: none; }
+.session-list.empty { display: flex; align-items: center; justify-content: center; padding: 0; }
+.session-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding-bottom: 16px; color: var(--label-tertiary); font-size: 12px; font-weight: 500; line-height: 18px; }
 .session-list > div + div { margin-top: 16px; }
 .session-group-title {
   position: sticky;

@@ -100,7 +100,7 @@ export default function App() {
         )}
 
         {empty ? (
-          <Welcome composer={composer} />
+          <Welcome key={session?.id ?? 'home'} composer={composer} />
         ) : (
           <>
             <div className="scroll-area" ref={scroll.scrollRef} onScroll={scroll.handleScroll}>

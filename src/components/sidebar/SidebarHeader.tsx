@@ -14,9 +14,9 @@ export function SidebarHeader({ onOpenSearch, onCollapse, onNewChat, multi, sele
   return (
     <div className="sidebar-top">
       <div className="brand-row">
-        <div className="brand" aria-label="DeepSeek">
+        <button className="brand" onClick={onNewChat} title="返回主页" aria-label="返回主页">
           <img src={deepseekWordmark} alt="DeepSeek" />
-        </div>
+        </button>
         <div className="brand-actions">
           {!multi && <button className="icon-btn" onClick={onOpenSearch} title="搜索对话 Ctrl K" aria-label="搜索对话">
             <IconSearch />
