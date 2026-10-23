@@ -20,8 +20,6 @@ export function useConversationScroll(messages: Message[], sessionId?: string) {
     [messages],
   );
 
-  const lastLen = messages.length ? messages[messages.length - 1].content.length : 0;
-
   const updateNavActive = useCallback(() => {
     const area = scrollRef.current;
     if (!area || !navItems.length) return;
@@ -48,9 +46,16 @@ export function useConversationScroll(messages: Message[], sessionId?: string) {
     setAtBottom(true);
   }, []);
 
+  // 观察实际渲染高度，同时覆盖思考、来源、Markdown 节流与折叠变化。
   useEffect(() => {
-    if (atBottomRef.current) scrollToBottom(false);
-  }, [messages.length, lastLen, sessionId, scrollToBottom]);
+    const content = scrollRef.current?.firstElementChild;
+    if (!content) return;
+    const observer = new ResizeObserver(() => {
+      if (atBottomRef.current) scrollToBottom(false);
+    });
+    observer.observe(content);
+    return () => observer.disconnect();
+  }, [sessionId, scrollToBottom]);
 
   // 切换会话时回到最新位置
   useEffect(() => {
