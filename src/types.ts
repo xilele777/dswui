@@ -6,7 +6,11 @@ export type ReasoningEffort = 'auto' | 'minimal' | 'low' | 'medium' | 'high' | '
 export type ThinkingMode = 'auto' | 'model' | 'reasoning_effort' | 'deepseek' | 'openrouter' | 'thinking_budget' | 'siliconflow' | 'custom';
 export type SearchMode = 'auto' | 'none' | 'openrouter' | 'enable_search' | 'search_enabled' | 'deepseek' | 'custom';
 
-export interface WebSource { title: string; url: string; }
+export interface WebSource { title: string; url: string; snippet?: string; siteName?: string; publishedAt?: string; }
+export type SearchStatus = 'searching' | 'complete' | 'empty' | 'unverified' | 'error';
+export type ThinkingStep =
+  | { type: 'reasoning'; text: string }
+  | { type: 'search'; sources: WebSource[]; status: SearchStatus };
 
 export interface Usage {
   prompt_tokens?: number;
@@ -21,6 +25,8 @@ export interface Message {
   content: string;
   /** 思维链（对应 THINK 片段） */
   reasoning?: string;
+  /** 按接收顺序保存思考与搜索节点，旧记录仍可使用 reasoning。 */
+  thinkingSteps?: ThinkingStep[];
   status: MessageStatus;
   createdAt: number;
   /** 思维链耗时（毫秒），用于渲染“已深度思考（用时 12 秒）” */
@@ -34,6 +40,8 @@ export interface Message {
   reasoningEffort?: ReasoningEffort;
   thinkingBudget?: number;
   sources?: WebSource[];
+  searchStatus?: SearchStatus;
+  generationPhase?: 'searching' | 'thinking' | 'answering';
 }
 
 export interface Session {

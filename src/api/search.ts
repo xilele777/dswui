@@ -9,8 +9,24 @@ export function safeSources(value: unknown): WebSource[] {
     const s = item?.url_citation ?? item;
     if (typeof s?.url !== 'string' || !/^https?:\/\//i.test(s.url) || seen.has(s.url)) return [];
     seen.add(s.url);
-    return [{ title: typeof s.title === 'string' ? s.title : s.url, url: s.url }];
+    const field = (...values: unknown[]) => values.find((v): v is string => typeof v === 'string' && !!v.trim());
+    return [{ title: field(s.title) || s.url, url: s.url,
+      snippet: field(s.snippet, s.summary, s.content)?.slice(0, 1000),
+      siteName: field(s.site_name, s.siteName),
+      publishedAt: field(s.published_at, s.publishedAt, s.date),
+    }];
   }).slice(0, 50);
+}
+
+/** 各中转可能同时返回 annotations 和 search_info，空数组不能挡住其他来源。 */
+export function responseSources(json: any): WebSource[] {
+  const choice = json?.choices?.[0];
+  return safeSources([
+    ...(choice?.delta?.annotations ?? []),
+    ...(choice?.message?.annotations ?? []),
+    ...(json?.search_info?.search_results ?? []),
+    ...(json?.output?.search_info?.search_results ?? []),
+  ]);
 }
 
 /** DeepSeek 的原始搜索接口：先检索，再将有来源的文本交给聊天模型。 */
@@ -28,7 +44,8 @@ export async function searchContext(opts: StreamOptions): Promise<WireMessage[]>
   if (!Array.isArray(json.results)) throw new Error('搜索接口没有返回 results 数组，请核对联网搜索协议');
   const sources = safeSources(json.results);
   opts.onSources?.(sources);
-  const results = json.results.slice(0, 5).map((r: Record<string, unknown>) => ({
+  opts.onSearchStatus?.(sources.length ? 'complete' : 'empty');
+  const results = json.results.filter((r: Record<string, unknown>) => sources.some((s) => s.url === r.url)).slice(0, 5).map((r: Record<string, unknown>) => ({
     title: r.title, url: r.url,
     text: String(r.content || r.summary || r.snippet || '').slice(0, 6000),
   }));

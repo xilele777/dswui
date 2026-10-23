@@ -1,4 +1,4 @@
-import type { Provider, ReasoningEffort, Usage, WebSource } from '../types';
+import type { Provider, ReasoningEffort, SearchStatus, Usage, WebSource } from '../types';
 
 export interface WireMessage {
   role: 'system' | 'user' | 'assistant';
@@ -21,4 +21,5 @@ export interface StreamOptions {
   onUsage?: (usage: Usage) => void;
   onModel?: (model: string) => void;
   onSources?: (sources: WebSource[]) => void;
+  onSearchStatus?: (status: SearchStatus) => void;
 }

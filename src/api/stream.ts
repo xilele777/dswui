@@ -2,7 +2,7 @@ import { chatEndpoint } from './endpoints';
 import { readSse } from './sse';
 import type { StreamOptions } from './types';
 import { featureParams, resolveSearchMode } from './capabilities';
-import { safeSources, searchContext } from './search';
+import { responseSources, searchContext } from './search';
 
 function pickDelta(delta: unknown): { text: string; reasoning: string } {
   if (!delta || typeof delta !== 'object') return { text: '', reasoning: '' };
@@ -47,14 +47,32 @@ async function consumeJsonResponse(res: Response, opts: StreamOptions): Promise<
   const { text, reasoning } = pickDelta(m);
   if (reasoning) opts.onReasoning?.(reasoning);
   if (text) opts.onDelta(text);
-  const sources = safeSources(m?.annotations ?? j?.search_info?.search_results);
+  const sources = responseSources(j);
   if (sources.length) opts.onSources?.(sources);
   if (m?.tool_calls?.length) throw new Error('接口返回了需要客户端执行的工具调用。请改用服务端联网插件或 DeepSeek Search API；本客户端尚未执行通用 function tools。');
   if (j?.model) opts.onModel?.(j.model);
   if (j?.usage) opts.onUsage?.(j.usage);
 }
 
-export async function streamChat(opts: StreamOptions): Promise<void> {
+export async function streamChat(options: StreamOptions): Promise<void> {
+  let hasSources = false;
+  const opts: StreamOptions = { ...options, onSources: (sources) => {
+    if (!sources.length) return;
+    hasSources = true;
+    options.onSources?.(sources);
+    options.onSearchStatus?.('complete');
+  } };
+  if (opts.search) opts.onSearchStatus?.('searching');
+  try {
+    await requestChat(opts);
+    if (opts.search && resolveSearchMode(opts.provider) !== 'deepseek' && !hasSources) opts.onSearchStatus?.('unverified');
+  } catch (error: any) {
+    if (opts.search && error?.name !== 'AbortError') opts.onSearchStatus?.('error');
+    throw error;
+  }
+}
+
+async function requestChat(opts: StreamOptions): Promise<void> {
   const { provider, model, signal } = opts;
   const url = chatEndpoint(provider.baseUrl);
   const params = featureParams(provider, !!opts.thinking, !!opts.search, opts.reasoningEffort, opts.thinkingBudget);
@@ -117,11 +135,11 @@ export async function streamChat(opts: StreamOptions): Promise<void> {
     if (json?.model) opts.onModel?.(json.model);
     if (json?.usage) opts.onUsage?.(json.usage);
     const choice = json?.choices?.[0];
-    const sources = safeSources(choice?.delta?.annotations ?? choice?.message?.annotations ?? json?.search_info?.search_results);
+    const sources = responseSources(json);
     if (sources.length) opts.onSources?.(sources);
     if (!choice) return;
     if (choice.delta?.tool_calls?.length) throw new Error('接口返回了需要客户端执行的工具调用，请改用服务端联网插件或 DeepSeek Search API。');
-    const { text, reasoning } = pickDelta(choice.delta);
+    const { text, reasoning } = pickDelta(choice.delta ?? choice.message);
     if (reasoning) opts.onReasoning?.(reasoning);
     if (text) opts.onDelta?.(text);
   });

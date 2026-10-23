@@ -70,6 +70,14 @@ export function effectiveEffort(p: Provider, effort = p.reasoningEffort ?? 'auto
 }
 
 const reserved = new Set(['model', 'messages', 'stream', '__proto__', 'constructor', 'prototype']);
+function mergeParams(target: Record<string, unknown>, source: Record<string, unknown>) {
+  for (const [key, value] of Object.entries(source)) {
+    const previous = target[key];
+    if (previous && value && typeof previous === 'object' && typeof value === 'object' && !Array.isArray(previous) && !Array.isArray(value)) {
+      target[key] = { ...previous, ...value };
+    } else target[key] = value;
+  }
+}
 export function parseFeatureParams(raw: string | undefined, label: string, effort: ReasoningEffort, budget: number): Record<string, unknown> {
   if (!raw?.trim()) return {};
   let parsed: unknown;
@@ -109,11 +117,11 @@ export function featureParams(p: Provider, thinking: boolean, search: boolean, r
     switch (resolveSearchMode(p)) {
       case 'none': throw new Error('当前地址未识别到联网能力，请在「设置 → 服务商与密钥 → 联网搜索协议」选择中转实际支持的协议');
       case 'openrouter': body.plugins = [{ id: 'web' }]; break;
-      case 'enable_search': body.enable_search = true; break;
+      case 'enable_search': body.enable_search = true; body.search_options = { enable_source: true }; break;
       case 'search_enabled': body.search_enabled = true; break;
       case 'custom':
         if (!p.searchParams?.trim()) throw new Error('请先填写自定义联网搜索参数');
-        Object.assign(body, parseFeatureParams(p.searchParams, '自定义联网参数', effort, budget ?? 8192)); break;
+        mergeParams(body, parseFeatureParams(p.searchParams, '自定义联网参数', effort, budget ?? 8192)); break;
     }
   }
   return body;
