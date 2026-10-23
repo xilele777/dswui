@@ -9,6 +9,7 @@
 ```bash
 npm install
 npm run dev          # 开发模式，http://localhost:5173
+npm run typecheck    # TypeScript 检查
 npm run build        # 产出「单文件」dist/index.html，双击即可用
 ```
 
@@ -65,7 +66,7 @@ https://api.xxx.com/v1/chat/completions   → 原样使用
 
 强度档位由上游模型决定：DeepSeek 协议显示默认/低/高/最高，硅基 V4 显示默认/高/最高；通用协议提供候选档位，但中转可能不接受其中某些值。仅切换模型时不显示强度，`enable_thinking` 模式则使用 Token 预算。不能靠客户端开关让不支持推理的模型拥有推理能力；部分模型只返回答案、不返回思考过程。
 
-联网返回来源时，会显示可展开的网页链接并写入 Markdown 导出。DeepSeek 独立检索失败会停止本次生成；服务端插件若静默忽略参数，客户端无法仅凭答案断定它执行过搜索。此版本没有通用 function tools 执行循环；中转若要求前端执行搜索工具，需要增加工具执行服务，或改用服务端插件。联网可能另行计费，浏览器直连仍需 CORS。
+联网返回来源时，会显示「搜索到 N 个网页」节点，点击打开右侧搜索结果面板，来源也会写入 Markdown 导出；有思考过程时，搜索节点按接收顺序穿插在思考段落之间。面板展示接口返回的标题、站点、摘要与日期；站点使用本地字母标记。DeepSeek 独立检索失败会停止本次生成；服务端插件未返回来源时会明确提示，客户端无法仅凭答案断定它执行过搜索。此版本没有通用 function tools 执行循环；中转若要求前端执行搜索工具，需要增加工具执行服务，或改用服务端插件。联网可能另行计费，浏览器直连仍需 CORS。
 
 参考资料（2026-10-23 核对）：[OpenRouter 联网](https://openrouter.ai/docs/features/web-search)、[OpenRouter 思考](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)、[百炼联网](https://help.aliyun.com/zh/model-studio/web-search)、[DeepSeek 思考](https://api-docs.deepseek.com/guides/thinking_mode)、[DeepSeek 检索](https://api-docs.deepseek.com/guides/search)、[硅基流动参数](https://docs.siliconflow.cn/cn/api-reference/chat-completions/chat-completions)。
 
@@ -123,6 +124,7 @@ http.createServer((req, res) => {
 - Markdown：标题 / 列表 / 表格 / 引用 / 任务列表 / 代码高亮 + 一键复制 / KaTeX 公式
 - 停止生成、重新生成、复制消息、编辑用户消息并重发（用户消息不提供删除入口）
 - 空白新对话为临时状态，发送首条消息后才进入历史；离开空对话不会留下历史条目
+- 品牌图标返回首页；欢迎语按本地时段随机变化，在当前欢迎页停留期间保持稳定
 - 会话管理：置顶、重命名、删除、搜索（按标题和内容）、按时间分组
 - 深浅色主题（跟随系统），移动端侧栏抽屉
 - token 用量展示（服务端返回 `usage` 时）
@@ -178,12 +180,14 @@ docs/                 对 chat.deepseek.com 的逆向分析报告
 
 文档维护入口见 [`docs/文档索引.md`](./docs/文档索引.md)。每次体验或协议改动都追加到对应主题文档，并在 `docs/维护记录-YYYY-MM-DD.md` 留下当天记录，避免重复堆叠同类文件。
 
+2026-10-23 联调前验收：六组共 116 项检查通过，覆盖原版界面取样、服务商参数、搜索思考、故障恢复和生产包连接本地 Mock 的真实 HTTP 流式链路；详见[验收记录](./docs/维护记录-2026-10-23.md#后端联调前最终审查)。真实后端仍需核对鉴权、CORS、能力参数与 SSE/搜索返回。
+
 ## 与官网的差异
 
 | 官网 | 这里 |
 | --- | --- |
 | 上下文由服务端按消息树回溯 | 客户端每次组装全量 `messages` |
-| 联网搜索 | 按服务商协议调用服务端插件，或先调用 DeepSeek Search API；返回来源时显示链接，未复刻官网完整搜索卡片 |
+| 联网搜索 | 按服务商协议调用服务端插件或 DeepSeek Search API；来源按接收顺序显示为思考区搜索节点，点击打开结果面板；上游未提供的查询、浏览步骤无法回放 |
 | 文件问答 | 未接入文件解析 |
 | 语音朗读 | 使用浏览器 speechSynthesis |
 | 断线自动续传 `resume_stream` | 中断后保留已收内容，可手动重生成 |
