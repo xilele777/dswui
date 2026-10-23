@@ -5,22 +5,25 @@
 export async function readSse(
   body: ReadableStream<Uint8Array>,
   onData: (payload: string) => void,
-): Promise<void> {
+): Promise<boolean> {
   const reader = body.getReader();
   const decoder = new TextDecoder('utf-8');
   let buffer = '';
 
+  let completed = false;
   const emitBlock = (block: string) => {
+    const data: string[] = [];
     for (const line of block.split(/\r?\n/)) {
       if (!line.startsWith('data:')) continue;
-      const payload = line.slice(5).trim();
-      if (!payload || payload === '[DONE]') continue;
-      onData(payload);
+      data.push(line.slice(5).replace(/^ /, ''));
     }
+    const payload = data.join('\n').trim();
+    if (payload === '[DONE]') completed = true;
+    else if (payload) onData(payload);
   };
 
   try {
-    while (true) {
+    while (!completed) {
       const { done, value } = await reader.read();
       if (done) break;
       buffer += decoder.decode(value, { stream: true });
@@ -31,11 +34,17 @@ export async function readSse(
         const match = buffer.slice(idx).match(/^\r?\n\r?\n/);
         buffer = buffer.slice(idx + (match ? match[0].length : 2));
         if (block.trim()) emitBlock(block);
+        if (completed) break;
       }
     }
 
-    buffer += decoder.decode();
-    if (buffer.trim()) emitBlock(buffer);
+    if (!completed) {
+      buffer += decoder.decode();
+      if (buffer.trim()) emitBlock(buffer);
+    } else {
+      await reader.cancel().catch(() => {});
+    }
+    return completed;
   } catch (error) {
     await reader.cancel().catch(() => {});
     throw error;

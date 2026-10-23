@@ -50,8 +50,14 @@ async function consumeJsonResponse(res: Response, opts: StreamOptions): Promise<
   const sources = responseSources(j);
   if (sources.length) opts.onSources?.(sources);
   if (m?.tool_calls?.length) throw new Error('接口返回了需要客户端执行的工具调用。请改用服务端联网插件或 DeepSeek Search API；本客户端尚未执行通用 function tools。');
+  checkFinishReason(j?.choices?.[0]?.finish_reason);
   if (j?.model) opts.onModel?.(j.model);
   if (j?.usage) opts.onUsage?.(j.usage);
+}
+
+function checkFinishReason(reason: unknown) {
+  if (reason === 'length') throw new Error('回答达到输出长度上限，已保留收到的内容。可调整最大输出 Token 后重试。');
+  if (reason === 'content_filter') throw new Error('服务端内容过滤中止了回答，已保留收到的内容。');
 }
 
 export async function streamChat(options: StreamOptions): Promise<void> {
@@ -124,7 +130,8 @@ async function requestChat(opts: StreamOptions): Promise<void> {
     return;
   }
 
-  await readSse(res.body, (payload) => {
+  let finished = false;
+  const completed = await readSse(res.body, (payload) => {
     let json: any;
     try {
       json = JSON.parse(payload);
@@ -142,5 +149,8 @@ async function requestChat(opts: StreamOptions): Promise<void> {
     const { text, reasoning } = pickDelta(choice.delta ?? choice.message);
     if (reasoning) opts.onReasoning?.(reasoning);
     if (text) opts.onDelta?.(text);
+    checkFinishReason(choice.finish_reason);
+    if (choice.finish_reason) finished = true;
   });
+  if (!completed && !finished) throw new Error('连接在回答完成前中断，已保留收到的内容，请重新生成。');
 }
