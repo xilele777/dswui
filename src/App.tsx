@@ -23,7 +23,6 @@ export default function App() {
   const settings = useStore((s) => s.settings);
   const session = useStore(activeSession);
   const provider = useStore(activeProvider);
-  const streamingKey = useStore((s) => s.streamingKey);
   const sidebarOpen = useStore((s) => s.sidebarOpen);
   const setSidebarOpen = useStore((s) => s.setSidebarOpen);
 
@@ -34,7 +33,7 @@ export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
 
   const messages = session?.messages ?? [];
-  const streaming = !!streamingKey && streamingKey.startsWith(`${session?.id}:`);
+  const streaming = messages.some((m) => m.role === 'assistant' && m.status === 'WIP');
   const scroll = useConversationScroll(messages, session?.id);
   const title = useTitleEditor(session?.id, session?.title);
 
@@ -61,7 +60,7 @@ export default function App() {
     <Composer
       key={session?.id ?? 'new-chat'}
       onSend={(text) => void sendMessage(text, { thinking, search })}
-      onStop={stopGeneration}
+      onStop={() => stopGeneration(session?.id)}
       streaming={streaming}
       thinking={thinking}
       search={search}

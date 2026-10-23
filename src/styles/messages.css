@@ -88,6 +88,7 @@
 }
 .msg-actions .icon-btn svg { width: 16px; height: 16px; }
 .msg-actions .icon-btn.active { color: var(--brand); background: var(--brand-weak); }
+.msg-actions .icon-btn:disabled, .err-actions .mini-btn:disabled { opacity: .4; cursor: not-allowed; }
 .assistant-actions { opacity: 1; height: auto; min-height: 28px; padding-bottom: 10px; margin-left: -6px; flex-wrap: wrap; gap: 10px; }
 .msg-actions:focus-within { opacity: 1; }
 .msg-user .msg-actions .icon-btn + .icon-btn { margin-left: 10px; }

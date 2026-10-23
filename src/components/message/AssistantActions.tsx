@@ -7,11 +7,12 @@ import { IconCopy, IconDislike, IconLike, IconRefresh, IconSpeaker, IconShare } 
 interface Props {
   message: Message;
   wip: boolean;
+  streaming: boolean;
   showUsage: boolean;
   onRegenerate: (messageId: string) => void;
 }
 
-export function AssistantActions({ message, wip, showUsage, onRegenerate }: Props) {
+export function AssistantActions({ message, wip, streaming, showUsage, onRegenerate }: Props) {
   const [feedback, setFeedback] = useState<'like' | 'dislike' | null>(null);
 
   const usageText = useMemo(() => {
@@ -50,7 +51,7 @@ export function AssistantActions({ message, wip, showUsage, onRegenerate }: Prop
           <IconCopy />
         </button>
       )}
-      <button className="icon-btn" title="重新生成" onClick={() => onRegenerate(message.id)}>
+      <button className="icon-btn" title="重新生成" disabled={streaming} onClick={() => onRegenerate(message.id)}>
         <IconRefresh />
       </button>
       <button

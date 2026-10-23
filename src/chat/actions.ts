@@ -5,8 +5,8 @@ import type { Message } from '../types';
 import { hasActiveGeneration, stopAllGenerations } from './controllers';
 import { runGeneration } from './generation';
 
-export function stopGeneration(): void {
-  stopAllGenerations();
+export function stopGeneration(sessionId?: string): void {
+  stopAllGenerations(sessionId);
 }
 
 export function isStreaming(): boolean {
@@ -34,6 +34,7 @@ export async function sendMessage(text: string, opts: { thinking: boolean; searc
   if (!sessionId || !st.sessions.some((s) => s.id === sessionId)) {
     sessionId = st.newSession();
   }
+  if (st.sessions.find((s) => s.id === sessionId)?.messages.some((m) => m.status === 'WIP')) return;
 
   const userMsg: Message = {
     id: uid(),
@@ -57,6 +58,7 @@ export async function regenerate(sessionId: string, assistantId: string) {
   const st = useStore.getState();
   const session = st.sessions.find((s) => s.id === sessionId);
   if (!session) return;
+  if (session.messages.some((m) => m.status === 'WIP')) return;
   const idx = session.messages.findIndex((m) => m.id === assistantId);
   if (idx < 0) return;
   const prevUser = [...session.messages.slice(0, idx)].reverse().find((m) => m.role === 'user');
@@ -77,6 +79,7 @@ export async function editAndResend(sessionId: string, userId: string, text: str
   const st = useStore.getState();
   const session = st.sessions.find((s) => s.id === sessionId);
   if (!session) return;
+  if (session.messages.some((m) => m.status === 'WIP')) return;
   const target = session.messages.find((m) => m.id === userId);
   if (!target) return;
   useStore.getState().patchMessage(sessionId, userId, { content: next });

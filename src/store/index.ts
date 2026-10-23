@@ -36,7 +36,11 @@ export const useStore = create<StoreState>()(
         return {
           ...current,
           ...p,
-          sessions: (p.sessions ?? current.sessions).filter((s) => s.messages.length > 0),
+          // 浏览器重载后旧请求已不存在，保留内容并结束历史中的加载态。
+          sessions: (p.sessions ?? current.sessions).filter((s) => s.messages.length > 0).map((s) => ({
+            ...s,
+            messages: s.messages.map((m) => m.status === 'WIP' ? { ...m, status: 'INCOMPLETE' as const } : m),
+          })),
           activeSessionId: p.sessions?.some((s) => s.id === p.activeSessionId && s.messages.length > 0) ? p.activeSessionId! : null,
           settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}) },
           providers: p.providers?.length ? p.providers : current.providers,

@@ -1,6 +1,7 @@
 import type { StateCreator } from 'zustand';
 import type { StoreState, SessionSlice } from '../types';
 import { emptySession } from '../defaults';
+import { stopAllGenerations } from '../../chat/controllers';
 
 const now = () => Date.now();
 
@@ -19,14 +20,16 @@ export const createSessionSlice: StateCreator<StoreState, [], [], SessionSlice> 
     activeSessionId: id,
     sessions: st.sessions.filter((s) => s.id === id || s.messages.length > 0),
   })),
-  deleteSession: (id) =>
+  deleteSession: (id) => {
+    stopAllGenerations(id);
     set((st) => {
       const sessions = st.sessions.filter((s) => s.id !== id);
       return {
         sessions,
         activeSessionId: st.activeSessionId === id ? sessions[0]?.id ?? null : st.activeSessionId,
       };
-    }),
+    });
+  },
   renameSession: (id, title) =>
     set((st) => ({
       sessions: st.sessions.map((s) => (s.id === id ? { ...s, title } : s)),
@@ -35,7 +38,10 @@ export const createSessionSlice: StateCreator<StoreState, [], [], SessionSlice> 
     set((st) => ({
       sessions: st.sessions.map((s) => (s.id === id ? { ...s, pinned: !s.pinned } : s)),
     })),
-  clearAllSessions: () => set({ sessions: [], activeSessionId: null }),
+  clearAllSessions: () => {
+    stopAllGenerations();
+    set({ sessions: [], activeSessionId: null });
+  },
   setSessionThinking: (id, thinking) =>
     set((st) => ({
       sessions: st.sessions.map((s) =>

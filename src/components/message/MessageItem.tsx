@@ -24,6 +24,7 @@ export function MessageItem(props: Props) {
   return (
     <AssistantMessage
       message={props.message}
+      streaming={props.streaming}
       showUsage={props.showUsage}
       onRegenerate={props.onRegenerate}
     />

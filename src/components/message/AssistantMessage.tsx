@@ -8,10 +8,11 @@ import { SearchResults } from './SearchResults';
 interface Props {
   message: Message;
   showUsage: boolean;
+  streaming: boolean;
   onRegenerate: (messageId: string) => void;
 }
 
-export function AssistantMessage({ message, showUsage, onRegenerate }: Props) {
+export function AssistantMessage({ message, showUsage, streaming, onRegenerate }: Props) {
   const wip = message.status === 'WIP';
   const display = useThrottled(message.content, wip ? 80 : 0);
   const hasSearch = !!message.searchStatus || !!message.sources?.length;
@@ -29,25 +30,22 @@ export function AssistantMessage({ message, showUsage, onRegenerate }: Props) {
       {showThink && (
         <ThinkBlock text={message.reasoning ?? ''} ms={message.reasoningMs} wip={thinking} searching={wip && message.searchStatus === 'searching'} steps={steps} />
       )}
-
       {!showThink && searchResults}
 
-      {message.error ? (
+      {(display || !message.error) && (
+        <div className="body">
+          {display ? <Markdown text={display} /> : wip ? null : <span style={{ opacity: 0.5 }}>（无内容）</span>}
+        </div>
+      )}
+
+      {message.error && (
         <div className="error-card">
           {message.error}
           <div className="err-actions">
-            <button className="mini-btn" onClick={() => onRegenerate(message.id)}>
+            <button className="mini-btn" disabled={streaming} onClick={() => onRegenerate(message.id)}>
               重试
             </button>
           </div>
-        </div>
-      ) : (
-        <div className="body">
-          {display ? (
-            <Markdown text={display} />
-          ) : wip ? null : (
-            <span style={{ opacity: 0.5 }}>（无内容）</span>
-          )}
         </div>
       )}
 
@@ -55,7 +53,7 @@ export function AssistantMessage({ message, showUsage, onRegenerate }: Props) {
         <div style={{ fontSize: 12, color: 'var(--label-tertiary)', marginTop: 6 }}>已停止</div>
       )}
 
-      <AssistantActions message={message} wip={wip} showUsage={showUsage} onRegenerate={onRegenerate} />
+      <AssistantActions message={message} wip={wip} streaming={streaming} showUsage={showUsage} onRegenerate={onRegenerate} />
     </div>
   );
 }

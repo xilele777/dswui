@@ -33,7 +33,7 @@ export async function runGeneration(sessionId: string, assistantId: string): Pro
   const wire = buildHistory({ messages: history }, st.settings);
   if (!wire.some((m) => m.role === 'user')) return;
 
-  const controller = registerController(assistantId);
+  const controller = registerController(assistantId, sessionId);
   useStore.getState().setStreamingKey(`${sessionId}:${assistantId}`);
 
   const buffer = new StreamBuffer(model, patch);
@@ -61,7 +61,7 @@ export async function runGeneration(sessionId: string, assistantId: string): Pro
     buffer.finish(buffer.hasContent ? 'OK' : 'INCOMPLETE');
   } catch (e: any) {
     const aborted = e?.name === 'AbortError';
-    buffer.finish(buffer.hasContent ? 'INCOMPLETE' : 'ERROR', {
+    buffer.finish(aborted || buffer.hasContent ? 'INCOMPLETE' : 'ERROR', {
       error: aborted ? undefined : String(e?.message ?? e),
     });
   } finally {
