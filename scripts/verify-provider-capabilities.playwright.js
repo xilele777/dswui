@@ -117,7 +117,7 @@ async (page) => {
     await p.locator('.msg-ai button[title="重新生成"]').click();
     await p.locator('.msg-ai .body').getByText('测试回答', { exact: true }).waitFor();
     check(lastBody().reasoning_effort === 'medium', 'Regeneration preserves original message effort');
-    check(await p.locator('.message-sources summary').innerText() === '1 个网页', 'Returned citations appear below reply');
+    check(await p.locator('.message-sources [role=status]').innerText() === '搜索到 1 个网页', 'Returned citations use search timeline entry');
     for (const width of [390, 320]) {
       await p.setViewportSize({ width, height: 844 });
       const fit = await p.locator('.composer-bar').evaluate((e) => { const r = e.getBoundingClientRect(); return [...e.querySelectorAll('button')].every((b) => { const s = b.getBoundingClientRect(); return s.left >= r.left - 1 && s.right <= r.right + 1 && s.width > 24; }); });

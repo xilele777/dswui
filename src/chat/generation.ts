@@ -54,10 +54,8 @@ export async function runGeneration(sessionId: string, assistantId: string): Pro
       onUsage: (u) => buffer.setUsage(u),
       onReasoning: (chunk) => buffer.addReasoning(chunk),
       onDelta: (chunk) => buffer.addContent(chunk),
-      onSources: (sources) => {
-        const current = useStore.getState().sessions.find((s) => s.id === sessionId)?.messages.find((m) => m.id === assistantId)?.sources ?? [];
-        patch({ sources: [...new Map([...current, ...sources].map((s) => [s.url, s])).values()] });
-      },
+      onSearchStatus: (searchStatus) => buffer.setSearchStatus(searchStatus),
+      onSources: (sources) => buffer.addSources(sources),
     });
 
     buffer.finish(buffer.hasContent ? 'OK' : 'INCOMPLETE');
@@ -67,6 +65,8 @@ export async function runGeneration(sessionId: string, assistantId: string): Pro
       error: aborted ? undefined : String(e?.message ?? e),
     });
   } finally {
+    const message = useStore.getState().sessions.find((s) => s.id === sessionId)?.messages.find((m) => m.id === assistantId);
+    if (message?.searchStatus === 'searching') patch({ searchStatus: undefined });
     releaseController(assistantId);
     const cur = useStore.getState().streamingKey;
     if (cur === `${sessionId}:${assistantId}`) useStore.getState().setStreamingKey(null);

@@ -17,6 +17,7 @@ import { useTitleEditor } from './app/hooks/useTitleEditor';
 import { useInitialSetup } from './app/hooks/useInitialSetup';
 import { resolveSearchMode, resolveThinkingMode } from './api/capabilities';
 import type { SettingsTab } from './components/settings/types';
+import { SearchSourcesProvider } from './components/message/SearchSourcesPanel';
 
 export default function App() {
   const settings = useStore((s) => s.settings);
@@ -81,7 +82,7 @@ export default function App() {
   const empty = messages.length === 0;
 
   return (
-    <div className="app">
+    <SearchSourcesProvider conversationId={session?.id}><div className="app">
       <Sidebar onOpenSettings={() => { setSettingsTab('general'); setSettingsOpen(true); }} onOpenSearch={openSearch} />
 
       <main className="main">
@@ -120,6 +121,6 @@ export default function App() {
       {settingsOpen && <SettingsDialog initialTab={settingsTab} onClose={() => setSettingsOpen(false)} />}
       {searchOpen && <ConversationSearchDialog onClose={closeSearch} />}
       <ToastHost />
-    </div>
+    </div></SearchSourcesProvider>
   );
 }
